@@ -1,9 +1,9 @@
 {
-"name": "Relief Lab",
-"short_name": "ReliefLab",
-"display": "standalone",
-"background_color": "#111111",
-"theme_color": "#111111",
-"start_url": "index.html",
-"icons": []
+"name":"Relief Lab ULTRA",
+"short_name":"ReliefULTRA",
+"display":"standalone",
+"background_color":"#111111",
+"theme_color":"#111111",
+"start_url":"index.html",
+"icons":[]
 }

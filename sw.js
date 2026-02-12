@@ -1,13 +1,6 @@
-self.addEventListener('install', e => {
-  e.waitUntil(
-    caches.open('relief-lab').then(cache => {
-      return cache.addAll(['./']);
-    })
-  );
+self.addEventListener('install',e=>{
+e.waitUntil(caches.open('relief-ultra').then(cache=>cache.addAll(['./'])));
 });
-
-self.addEventListener('fetch', e => {
-  e.respondWith(
-    caches.match(e.request).then(response => response || fetch(e.request))
-  );
+self.addEventListener('fetch',e=>{
+e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request)));
 });
